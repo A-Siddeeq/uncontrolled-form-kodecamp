@@ -16,7 +16,7 @@ function App() {
      const phone = phoneRef.current.value
 
      if(!firstName || !lastName || !email || !phone){
-      alert("Input Fields")
+      alert("Please fill all fields")
     }else {
       console.log("Form submitted", { firstName, lastName, email, phone });
       alert("Form Submitted Successfully")
@@ -44,15 +44,15 @@ function App() {
          />
         <label htmlfor="Last Name">Last Name</label>
          <input 
-         name="Last Name"
-         type="Last Name"
+         name="lastName"
+         type="text"
          ref={lastNameRef}
          placeholder='Type your Last Name..'
          />
           <label htmlfor="Email">Email</label>
           <input 
          name="email"
-         type="text"
+         type="email"
          ref={emailRef}
          placeholder='eg: example@mail.com'
          />
