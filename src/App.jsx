@@ -40,7 +40,6 @@ function App() {
          type="text"
          ref={firstNameRef}
          placeholder='Type your First Name..'
-         minLength={3}
          />
         <label htmlfor="Last Name">Last Name</label>
          <input 
@@ -59,7 +58,8 @@ function App() {
         <label htmlfor="phone">Phone Number</label>
          <input 
          name="phone"
-         type="phone"
+         type='number'
+         inputMode="numeric"
          ref={phoneRef}
          placeholder='11 digit number..'
          minLength={11}
